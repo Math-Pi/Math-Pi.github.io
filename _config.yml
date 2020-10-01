@@ -35,6 +35,8 @@ paginate_path: /page:num/
 # Build settings
 markdown: kramdown
 imagepath: /Blog-Jax
+intensedebate_identifier: a15d5ae43cd7bc6ee4b4ee9630a4223d
+
 label1: <span style="font-size:12px">Publish by
 label2:  </span>
 links:
