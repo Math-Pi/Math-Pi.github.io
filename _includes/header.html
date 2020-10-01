@@ -1,0 +1,46 @@
+<header class="main-header">
+  <div class="wrapper">
+    <div class="header-flex">
+      <div class="menu-icon-container">
+        <span class="menu-icon"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </div>
+      <nav class="main-nav">
+        <span class="menu-icon-close"><i class="fa fa-times" aria-hidden="true"></i></span>
+        <ul>
+          {% for link in site.links %}
+			 {% assign count = 0 %}
+			 {% if link.type == site.blog_1 %}
+				 {% for post in site.all %}
+				   {% assign count = count | plus: 1 %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_2 %}
+				 {% for post in site.posts %}
+				   {% if post.SpringBoot%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+			 {% if link.type == site.blog_3 %}
+				{% for post in site.posts %}
+				   {% if post.Java%}
+						{% assign count = count | plus: 1 %}
+				   {% endif %}
+				 {% endfor %}
+			 {% endif %}
+
+         <li><a  href="{{ link.url }}"  data-hover="{{link.name}}">{{ link.name }}({{count}})</a></li>
+		 {% endfor %}
+        </ul>
+      </nav>
+      <p class="logo"><a href="{{site.baseurl}}/">{{ site.author }}</a></p>
+      <p class="logo2"><a href="{{site.baseurl}}/">Home</a></p>
+      <p class="logo2"><a href="{{site.baseurl}}/about">About</a></p>
+      <div class="search-icon-container">
+        <span class="search-icon"><a><i class="fa fa-search" aria-hidden="true"></i></a></span>
+      </div>
+    </div>
+  </div>
+</header> <!-- End Header -->

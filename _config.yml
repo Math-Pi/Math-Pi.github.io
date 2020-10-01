@@ -1,0 +1,57 @@
+title: Blog - Jax
+email: your-email@domain.com
+description: > # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+permalink: ':title/'
+baseurl: "/Blog-Jax" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Author settings
+author: Jax # add your name
+author-pic: adam-face.jpg
+about-author: My name is Jax. 
+
+# Contact links
+email: 2422886222@qq.com 	# Add your Email address
+phone: 15775066653 			# Add your Phone number
+website: Math-Pi.github.io 	# Add your website, do not add http://
+github: Math-Pi 			# Add your Github handle
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier.
+
+# Disqus
+discus_identifier: mr-brown # Add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Paginate
+paginate: 6
+paginate_path: /page:num/
+
+# Build settings
+markdown: kramdown
+imagepath: /Blog-Jax
+label1: <span style="font-size:12px">Publish by
+label2:  </span>
+links:
+  - name:		  SpringBoot
+    url:          /Blog-Jax/blog/SpringBoot
+    type:         SpringBoot
+    external:     false
+  - name:		  java
+    url:          /Blog-Jax/blog/java
+    type:         java
+    external:     false    
+blog_2:    SpringBoot
+blog_3:    java
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-sitemap
+
+include: [_pages]
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
