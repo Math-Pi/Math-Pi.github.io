@@ -5,7 +5,7 @@ description: > # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 permalink: ':title/'
-baseurl: "/Blog-Jax" # the subpath of your site, e.g. /blog
+baseurl:  # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Author settings
@@ -34,18 +34,18 @@ paginate_path: /page:num/
 
 # Build settings
 markdown: kramdown
-imagepath: /Blog-Jax
+imagepath: 
 intensedebate_identifier: a15d5ae43cd7bc6ee4b4ee9630a4223d
 
 label1: <span style="font-size:12px">Publish by
 label2:  </span>
 links:
   - name:		  SpringBoot
-    url:          /Blog-Jax/blog/SpringBoot
+    url:          /blog/SpringBoot
     type:         SpringBoot
     external:     false
   - name:		  java
-    url:          /Blog-Jax/blog/java
+    url:          /blog/java
     type:         java
     external:     false    
 blog_2:    SpringBoot
